@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090f">
+  <meta name="description" content="JR Nibir Hasan — CSE student and aspiring software engineer building thoughtful digital experiences.">
+  <title>JR Nibir Hasan — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#09090f;--panel:#11111b;--panel2:#151522;--text:#f4f2ff;--muted:#a09db5;--line:rgba(255,255,255,.1);--purple:#a78bfa;--pink:#f0abfc;--green:#a7f3d0;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 82% 3%,rgba(124,58,237,.18),transparent 34%),radial-gradient(ellipse at 0% 44%,rgba(59,130,246,.08),transparent 28%),var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}.mono,.eyebrow,.nav-links a,.tag,.project-no{font-family:"DM Mono",monospace}.nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(18px);background:rgba(9,9,15,.76);border-bottom:1px solid var(--line)}.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.04em}.brand-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,#a78bfa,#e879f9);color:#120c20;font-size:13px}.nav-links{display:flex;align-items:center;gap:28px;color:var(--muted);font-size:12px}.nav-links a:hover{color:white}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid var(--line);border-radius:999px;padding:12px 18px;font-size:13px;font-weight:700;transition:transform .2s,border-color .2s,background .2s}.nav-cta:hover,.btn:hover{transform:translateY(-2px);border-color:rgba(167,139,250,.7)}.btn-primary{background:linear-gradient(110deg,#c4b5fd,#f0abfc);color:#171021;border:0}.hero{padding:100px 0 82px;min-height:620px;display:flex;align-items:center}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:64px}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--green);font-size:11px;letter-spacing:.12em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 14px var(--green)}h1{font-size:clamp(46px,7vw,82px);line-height:1.02;letter-spacing:-.075em;margin:24px 0 20px;max-width:780px}h1 span{display:block;background:linear-gradient(100deg,#c4b5fd 5%,#f0abfc 58%,#93c5fd);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy{max-width:570px;color:var(--muted);font-size:16px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.mini-stats{display:flex;flex-wrap:wrap;gap:26px;margin-top:38px}.stat strong{display:block;font-size:20px;letter-spacing:-.04em}.stat span{font-size:11px;color:var(--muted)}.visual{position:relative;min-height:390px;display:grid;place-items:center}.orbit{position:absolute;width:320px;height:320px;border:1px solid rgba(196,181,253,.2);border-radius:50%;animation:spin 32s linear infinite}.orbit:before,.orbit:after{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--purple);box-shadow:0 0 24px var(--purple)}.orbit:before{top:42px;left:40px}.orbit:after{bottom:35px;right:27px;background:var(--pink);box-shadow:0 0 24px var(--pink)}.orbit.two{width:250px;height:250px;border-style:dashed;animation-direction:reverse;animation-duration:25s}.orbit.two:before{background:#93c5fd;top:15px;left:70%}.profile-card{position:relative;z-index:1;width:min(290px,80%);padding:25px;border:1px solid rgba(255,255,255,.14);border-radius:26px;background:linear-gradient(145deg,rgba(31,27,49,.96),rgba(14,14,23,.96));box-shadow:0 25px 100px rgba(124,58,237,.18);transform:rotate(-3deg)}.avatar{height:160px;border-radius:18px;background:radial-gradient(circle at 50% 25%,rgba(240,171,252,.4),transparent 36%),linear-gradient(135deg,#26203c,#141421);display:grid;place-items:center;font-size:52px;font-weight:800;letter-spacing:-.08em;color:#e9ddff;border:1px solid rgba(255,255,255,.09)}.card-status{display:flex;justify-content:space-between;gap:12px;margin-top:18px;font-size:11px;color:var(--muted)}.card-status strong{color:var(--text);font-size:14px;display:block}.floating-chip{position:absolute;z-index:2;padding:11px 14px;background:#151522;border:1px solid var(--line);border-radius:13px;box-shadow:0 12px 40px #0006;font:11px "DM Mono",monospace}.chip-a{top:48px;right:0}.chip-b{bottom:45px;left:0;color:var(--green)}.section{padding:82px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}.section-kicker{color:var(--purple);font:11px "DM Mono",monospace;letter-spacing:.12em;text-transform:uppercase}.section h2{font-size:clamp(30px,4vw,48px);line-height:1.1;letter-spacing:-.06em;margin:10px 0 0}.section-intro{max-width:430px;color:var(--muted);font-size:13px}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{padding:28px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.015))}.panel h3{margin:0 0 12px;font-size:17px}.panel p{margin:0;color:var(--muted);font-size:13px}.focus-list{display:grid;gap:14px;margin-top:22px}.focus-item{display:flex;gap:12px;align-items:center;color:#d8d5e7;font-size:13px}.focus-icon{display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:rgba(167,139,250,.12);color:var(--purple)}.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.tag{padding:9px 12px;border-radius:999px;border:1px solid var(--line);background:#ffffff05;color:#d6d2e7;font-size:11px}.tag.highlight{border-color:rgba(167,139,250,.35);color:#d8c9ff;background:rgba(167,139,250,.08)}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.project{padding:22px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(150deg,#151522,#0d0d15);min-height:260px;display:flex;flex-direction:column;transition:transform .25s,border-color .25s}.project:hover{transform:translateY(-5px);border-color:rgba(167,139,250,.45)}.project-top{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:11px}.project-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:rgba(167,139,250,.12);font-size:19px;color:var(--purple);margin:24px 0 16px}.project h3{font-size:17px;margin:0 0 9px}.project p{font-size:12px;color:var(--muted);margin:0}.project .skills{margin-top:auto;padding-top:20px}.timeline{display:grid;grid-template-columns:1fr 1fr;gap:18px}.timeline-card{position:relative;padding:25px 26px 25px 32px;border:1px solid var(--line);border-radius:20px;background:#ffffff03}.timeline-card:before{content:"";position:absolute;left:15px;top:31px;width:6px;height:6px;background:var(--purple);border-radius:50%;box-shadow:0 0 14px var(--purple)}.timeline-card .date{font:11px "DM Mono",monospace;color:var(--purple)}.timeline-card h3{margin:10px 0 6px;font-size:16px}.timeline-card p{margin:0;color:var(--muted);font-size:12px}.contact-box{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;padding:clamp(26px,5vw,52px);border:1px solid rgba(196,181,253,.22);border-radius:28px;background:radial-gradient(ellipse at 100% 0%,rgba(168,85,247,.16),transparent 50%),#11111b}.contact-box h2{font-size:clamp(32px,4vw,52px);line-height:1.08;letter-spacing:-.06em;margin:12px 0}.contact-box p{color:var(--muted);font-size:13px;max-width:470px}.contact-links{display:grid;gap:10px}.contact-link{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;border:1px solid var(--line);border-radius:13px;background:#ffffff04;font-size:12px}.contact-link:hover{border-color:rgba(167,139,250,.5)}footer{padding:28px 0 38px;color:var(--muted);font:11px "DM Mono",monospace}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:translateY(0)}.menu-btn{display:none;background:transparent;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px 11px}.muted-note{font-size:11px;color:var(--muted);margin-top:18px}.to-top{position:fixed;right:22px;bottom:22px;z-index:5;width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:#171522;color:white;cursor:pointer;opacity:0;pointer-events:none;transition:.2s}.to-top.show{opacity:1;pointer-events:auto}
+    @keyframes spin{to{transform:rotate(360deg)}}@media(max-width:850px){.hero{padding:70px 0 60px}.hero-grid{grid-template-columns:1fr;gap:20px}.visual{min-height:350px;grid-row:1}.hero-content{grid-row:2}.project-grid{grid-template-columns:1fr 1fr}.nav-links{gap:16px}.section-head{align-items:start;flex-direction:column;gap:8px}}@media(max-width:620px){.wrap{width:min(var(--max),calc(100% - 30px))}.nav-inner{height:66px}.nav-links{display:none;position:absolute;top:66px;left:0;right:0;padding:20px 22px;background:#0e0d16;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.nav-cta{display:none}.menu-btn{display:block}.hero{padding-top:42px;min-height:auto}.visual{min-height:300px}.orbit{width:260px;height:260px}.orbit.two{width:205px;height:205px}.profile-card{width:245px;padding:17px}.avatar{height:130px}.chip-a{top:15px}.chip-b{bottom:12px}.mini-stats{gap:18px}.section{padding:60px 0}.about-grid,.project-grid,.timeline,.contact-box{grid-template-columns:1fr}.section-head{margin-bottom:24px}.panel{padding:22px}.contact-box{padding:25px}.contact-links{margin-top:8px}h1{font-size:clamp(43px,13vw,65px)}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#home" aria-label="JR Nibir Hasan home"><span class="brand-mark">JR</span><span>JR NIBIR HASAN</span></a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">ABOUT</a><a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a><a href="#education">EDUCATION</a><a href="#contact">CONTACT</a>
+      </nav>
+      <a class="nav-cta" href="#contact">Let's connect <span>↗</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="dot"></span> Available for learning & collaboration</div>
+          <h1>Curious mind.<br><span>Building what's next.</span></h1>
+          <p class="hero-copy">I'm <strong>JR Nibir Hasan</strong>, a Computer Science & Engineering student focused on learning software development, solving problems, and turning ideas into useful digital experiences.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore my work <span>↘</span></a><a class="btn" href="#contact">Get in touch <span>↗</span></a></div>
+          <div class="mini-stats"><div class="stat"><strong>01</strong><span>Curious by nature</span></div><div class="stat"><strong>CSE</strong><span>My learning path</span></div><div class="stat"><strong>∞</strong><span>Ideas to explore</span></div></div>
+        </div>
+        <div class="visual" aria-label="Abstract developer profile card">
+          <div class="orbit"></div><div class="orbit two"></div>
+          <div class="floating-chip chip-a">✦ &nbsp; BUILD • LEARN • REPEAT</div>
+          <div class="profile-card"><div class="avatar">JR<span style="color:#f0abfc">.</span></div><div class="card-status"><div><strong>JR Nibir Hasan</strong><span>CSE Student & Developer</span></div><span style="color:#a7f3d0">● Online</span></div></div>
+          <div class="floating-chip chip-b">{"</>"} &nbsp; always learning</div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head"><div><div class="section-kicker">01 / About me</div><h2>Learning today.<br>Creating tomorrow.</h2></div><p class="section-intro">I believe good software starts with curiosity, grows through practice, and gets better with feedback.</p></div>
+        <div class="about-grid">
+          <article class="panel reveal"><h3>A little about me</h3><p>I'm studying Computer Science & Engineering at Bangladesh University of Business & Technology (BUBT). Right now, I'm building my foundations in programming, object-oriented thinking, and web development—one project at a time.</p><div class="focus-list"><div class="focus-item"><span class="focus-icon">⌘</span> Writing clean, understandable code</div><div class="focus-item"><span class="focus-icon">↗</span> Building practical web projects</div><div class="focus-item"><span class="focus-icon">✦</span> Growing into a software engineer</div></div></article>
+          <article class="panel reveal" id="skills"><h3>Current toolkit</h3><p>Skills I'm learning and developing. I'll keep updating this section as I gain experience.</p><div class="skills"><span class="tag highlight">C++</span><span class="tag highlight">OOP</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Git & GitHub</span><span class="tag">Responsive Design</span><span class="tag">Problem Solving</span></div><p class="muted-note">This portfolio is a work in progress—just like my journey.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head"><div><div class="section-kicker">02 / Selected projects</div><h2>Ideas in progress.</h2></div><p class="section-intro">A starting collection of the kinds of things I'm building and exploring. Replace these cards with your finished projects and live demos.</p></div>
+        <div class="project-grid">
+          <article class="project reveal"><div class="project-top"><span class="project-no">PROJECT / 001</span><span>↗</span></div><div class="project-icon">⌘</div><h3>OOP Practice Lab</h3><p>Small C++ exercises exploring classes, objects, constructors, and passing objects to functions.</p><div class="skills"><span class="tag">C++</span><span class="tag">OOP</span></div></article>
+          <article class="project reveal"><div class="project-top"><span class="project-no">PROJECT / 002</span><span>↗</span></div><div class="project-icon">▧</div><h3>Personal Portfolio</h3><p>A responsive personal website built to present my background, learning journey, and projects.</p><div class="skills"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div></article>
+          <article class="project reveal"><div class="project-top"><span class="project-no">PROJECT / 003</span><span>↗</span></div><div class="project-icon">✳</div><h3>Next Big Idea</h3><p>A placeholder for my next project. The goal: solve a real problem with a simple, useful product.</p><div class="skills"><span class="tag">Planning</span><span class="tag">Building</span></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="education">
+      <div class="wrap">
+        <div class="section-head"><div><div class="section-kicker">03 / Education</div><h2>The foundation.</h2></div><p class="section-intro">Building strong fundamentals while exploring the wider world of computer science and software engineering.</p></div>
+        <div class="timeline">
+          <article class="timeline-card reveal"><div class="date">CURRENT JOURNEY</div><h3>BSc in Computer Science & Engineering</h3><p>Bangladesh University of Business & Technology (BUBT), Bangladesh. Learning programming, discrete mathematics, and core CSE concepts.</p></article>
+          <article class="timeline-card reveal"><div class="date">LONG-TERM GOAL</div><h3>Aspiring Software Engineer</h3><p>Strengthen problem-solving, ship meaningful projects, collaborate with developers, and prepare for future opportunities in software engineering.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact-box reveal">
+          <div><div class="section-kicker">04 / Contact</div><h2>Have an idea?<br>Let's make it real.</h2><p>I'm open to learning from others, collaborating on beginner-friendly projects, and connecting with people who enjoy building things.</p><a class="btn btn-primary" href="mailto:jronfire999@gmail.com">Send me an email ↗</a></div>
+          <div class="contact-links"><a class="contact-link" href="https://github.com/jronfire999" target="_blank" rel="noreferrer"><span>GitHub <span style="color:var(--muted)">/ code & projects</span></span><span>↗</span></a><a class="contact-link" href="mailto:jronfire999@gmail.com"><span>Email <span style="color:var(--muted)">/ say hello</span></span><span>↗</span></a><a class="contact-link" href="#home"><span>Back to top <span style="color:var(--muted)">/ start again</span></span><span>↑</span></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© <span id="year"></span> JR NIBIR HASAN</span><span>DESIGNED WITH INTENTION · BUILT TO GROW</span></div></footer>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script>
+    const menuBtn=document.getElementById('menuBtn');
+    const navLinks=document.getElementById('navLinks');
+    menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰';});
+    navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰';}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    const toTop=document.getElementById('toTop');window.addEventListener('scroll',()=>toTop.classList.toggle('show',window.scrollY>500));toTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+  </script>
+</body>
+</html>
