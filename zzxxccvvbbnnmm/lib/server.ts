@@ -1,7 +1,7 @@
 import "server-only";
 import { createClient } from "@supabase/supabase-js";
 import { createHash, randomBytes } from "node:crypto";
-import argon2 from "argon2";
+import { argon2Verify } from "hash-wasm";
 import { cookies } from "next/headers";
 
 const COOKIE = "__Host-zzxxcc-session";
@@ -54,7 +54,7 @@ export async function authenticatePassword(password: string) {
   if (candidates.some((item) => !item.hash)) throw new Error("Password hashes are not configured.");
   const matches: string[] = [];
   for (const candidate of candidates) {
-    if (candidate.hash && await argon2.verify(candidate.hash, password).catch(() => false)) {
+    if (candidate.hash && await argon2Verify({ password, hash: candidate.hash }).catch(() => false)) {
       matches.push(candidate.person);
     }
   }
