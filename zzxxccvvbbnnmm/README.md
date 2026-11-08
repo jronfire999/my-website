@@ -5,7 +5,7 @@ Private two-person messaging app scaffold.
 ## Stack
 - Next.js App Router + TypeScript + Tailwind CSS
 - Supabase Postgres/Storage
-- Argon2id password verification
+- WebAssembly Argon2id password verification
 - HttpOnly, Secure, SameSite=Strict session cookie
 - Server-only RPC secret; no Supabase service-role key in the app
 
