@@ -28,6 +28,24 @@ export function hashToken(token: string) {
   return createHash("sha256").update(token).digest("hex");
 }
 
+export async function checkLoginRate(ip: string) {
+  const keyHash = hashToken(`${rpcSecret()}:${ip}`);
+  const { data, error } = await getRpc().rpc("chat_check_login_rate", {
+    p_server_secret: rpcSecret(),
+    p_key_hash: keyHash
+  });
+  if (error) throw new Error("Could not check login rate.");
+  return data === true;
+}
+
+export async function resetLoginRate(ip: string) {
+  const keyHash = hashToken(`${rpcSecret()}:${ip}`);
+  await getRpc().rpc("chat_reset_login_rate", {
+    p_server_secret: rpcSecret(),
+    p_key_hash: keyHash
+  });
+}
+
 export async function authenticatePassword(password: string) {
   const candidates = [
     { person: "person_1", hash: process.env.AUTH_PERSON_1_PASSWORD_HASH },
